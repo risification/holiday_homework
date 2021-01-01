@@ -13,7 +13,3 @@ str1 = str1[::-1]
 str1 = str1.replace('taht', 'ti', 1)
 str1 = str1[::-1]
 print(str1)
-
-# n = 3  — "I hate that I love that I hate it".
-# n = 2 это уже "I hate that I love it"
-# n = 1 чувства Халка выражаются как
