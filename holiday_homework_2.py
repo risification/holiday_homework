@@ -4,7 +4,7 @@ list1 = []
 while i < n + 1:
     if i % 2 != 1:
         list1.append('I love that')
-    elif i % 1 != 1:
+    else:
         list1.append('I hate that')
     i += 1
 
