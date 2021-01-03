@@ -9,6 +9,5 @@ while i < int(k):
         n = int(n)
     elif not n.endswith('0'):
         n = int(n) - 1
-        n = int(n)
     i += 1
 print(n)
