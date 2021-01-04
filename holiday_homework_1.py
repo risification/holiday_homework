@@ -7,7 +7,7 @@ while i < int(k):
     if n.endswith('0'):
         n = int(n) / 10
         n = int(n)
-    elif not n.endswith('0'):
+    else:
         n = int(n) - 1
     i += 1
 print(n)
