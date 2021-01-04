@@ -11,3 +11,4 @@ while i < int(k):
         n = int(n) - 1
     i += 1
 print(n)
+
