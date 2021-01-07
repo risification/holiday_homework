@@ -2,7 +2,6 @@ import random
 
 comp = random.sample([0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 4)
 byk = 0
-cow = 0
 print(comp)
 tryis = int(input('сколко раз вы хотите сыграть?: '))
 count = 0
