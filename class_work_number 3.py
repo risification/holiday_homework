@@ -4,14 +4,14 @@ comp = random.sample([0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 4)
 byk = 0
 cow = 0
 print(comp)
-tryis = int(input())
+tryis = int(input('сколко раз вы хотите сыграть?: '))
 count = 0
 for j in range(tryis):
-    if byk == 4:
-        break
-    else:
+    if byk != 4:
         byk = 0
         cow = 0
+    else:
+        break
     count += 1
     player = list(map(int, input().split()))
     i = 0
@@ -26,9 +26,11 @@ for j in range(tryis):
             cow += 1
         elif comp[i] == player[3]:
             cow += 1
-
         i += 1
-
-print('корова ' + str(cow))
-print('бык ' + str(byk))
-print("попытки " + str(count))
+        if byk == 4:
+            print('вы победили, кол-во попыток потребовалась:', count)
+            break
+    if byk != 4:
+        print('вы не угадали попробуйте еще раз')
+    print('корова ' + str(cow))
+    print('бык ' + str(byk))
